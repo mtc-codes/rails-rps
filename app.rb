@@ -1,72 +1,74 @@
-require "sinatra"
-require "sinatra/reloader"
+# Old code from Sinatra RPS assignment
 
-get("/") do
-  erb(:welcome)
-end
+# require "sinatra"
+# require "sinatra/reloader"
 
-get("/images/rps.jpg") do
-end
+# get("/") do
+#   erb(:welcome)
+# end
 
-get("/rock") do
-  choices = ["rock","paper","scissors"]
-  play = "rock"
-  counter = choices.sample
+# get("/images/rps.jpg") do
+# end
 
-  @my_play = "We played #{play}!"
-  @counter_play = "They played #{counter}!"
-  @outcome = 
-    if counter == play
-      "We tied!"
-    elsif counter = "scissors"
-      "We won!"
-    elsif counter = "paper"
-      "We lost!"
-    else
-      "We lost!"
-    end
-  erb(:rock)
+# get("/rock") do
+#   choices = ["rock","paper","scissors"]
+#   play = "rock"
+#   counter = choices.sample
+
+#   @my_play = "We played #{play}!"
+#   @counter_play = "They played #{counter}!"
+#   @outcome = 
+#     if counter == play
+#       "We tied!"
+#     elsif counter = "scissors"
+#       "We won!"
+#     elsif counter = "paper"
+#       "We lost!"
+#     else
+#       "We lost!"
+#     end
+#   erb(:rock)
   
-end
+# end
 
-get("/paper") do
-  choices = ["rock","paper","scissors"]
-  play = "paper"
-  counter = choices.sample
+# get("/paper") do
+#   choices = ["rock","paper","scissors"]
+#   play = "paper"
+#   counter = choices.sample
 
-  @my_play = "We played #{play}!"
-  @counter_play = "They played #{counter}!"
-  @outcome = 
-  if counter == play
-    "We tied!"
-  elsif counter = "rock"
-    "We won!"
-  elsif counter = "scissors"
-    "We lost!"
-  else
-    "We lost!"
-  end
-  erb(:paper)
+#   @my_play = "We played #{play}!"
+#   @counter_play = "They played #{counter}!"
+#   @outcome = 
+#   if counter == play
+#     "We tied!"
+#   elsif counter = "rock"
+#     "We won!"
+#   elsif counter = "scissors"
+#     "We lost!"
+#   else
+#     "We lost!"
+#   end
+#   erb(:paper)
   
-end
+# end
 
-get("/scissors") do
-  choices = ["rock","paper","scissors"]
-  play = "scissors"
-  counter = choices.sample
+# get("/scissors") do
+#   choices = ["rock","paper","scissors"]
+#   play = "scissors"
+#   counter = choices.sample
 
-  @my_play = "We played #{play}!"
-  @counter_play = "They played #{counter}!"
-  @outcome = 
-    if counter == play
-      "We tied!"
-    elsif counter = "paper"
-      "We won!"
-    elsif counter = "rock"
-      "We lost!"
-    else
-      "We lost!"
-    end
-  erb(:scissors)
+#   @my_play = "We played #{play}!"
+#   @counter_play = "They played #{counter}!"
+#   @outcome = 
+#     if counter == play
+#       "We tied!"
+#     elsif counter = "paper"
+#       "We won!"
+#     elsif counter = "rock"
+#       "We lost!"
+#     else
+#       "We lost!"
+#     end
+#   erb(:scissors)
 
-end
+# end
